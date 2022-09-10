@@ -13,7 +13,8 @@ on:
 
   push:
     branches:
-    - zdocs_y23487teg65f
+    - prod
+    # - zdocs_y23487teg6df
 
 
 
