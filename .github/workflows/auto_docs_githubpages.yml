@@ -59,6 +59,7 @@ jobs:
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
       run: |
            pip install -r  py36_min.txt
+           pip install utilmy
 
 
     - name: Install repo requirements   2
@@ -71,10 +72,10 @@ jobs:
         #pip install -r install/requirements_fake.txt
 
 
-    - name: Install utilmy
-      run:  |
-        pip install -e .
-        python -c "import utilmy"
+    #- name: Install utilmy
+    #  run:  |
+    #    pip install -e .
+    #    python -c "import utilmy"
 
            
 
