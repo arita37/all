@@ -16,6 +16,9 @@ on:
     - prod
     # - zdocs_y23487teg6df
 
+concurrency
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 
 
 jobs:
