@@ -8,7 +8,7 @@ on:
 
   push:
     branches:
-    - prod
+    - prodxxxxxx
 
 #  pull_request:
 #    branches:
