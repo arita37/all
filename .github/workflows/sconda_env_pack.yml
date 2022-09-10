@@ -1,0 +1,78 @@
+name: zconda_build_long
+### https://himbat.ngontinh24.com/article/how-to-use-conda-with-github-actions
+###  https://github.com/arita37/awesome-actions#static-analysis
+# cross-platform compatible conda env export --from-history > py38_dcgpy.yml
+# platform + package specific conda env export ENVNAME>ENV.yml
+# platform + package + channel specific conda list --explicit>ENV.txt
+
+
+####   Upload to Google Drive and other cloud
+###   https://dist.duck.sh/
+
+
+
+
+on:
+  workflow_dispatch:
+    inputs:
+
+
+  push:
+    branches:
+    - zconda_build1
+
+
+#  schedule:
+#     - cron:  '0 0 */2 * *'      #### 60mins
+#     #   #    - cron:  '*/10 * * * *'
+#     #   - cron:  '* * */2 * *'
+
+concurrency:
+  group: ${{ github.ref }}_long
+  cancel-in-progress: true
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    #- uses: actions/checkout@v1
+    #  ref: ${{ github.head_ref }
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+
+    ##### Conda Build #############################################
+    - uses: actions/checkout@v2
+    - uses: goanpeca/setup-miniconda@v1
+      with:
+        activate-environment: myenv
+        environment-file: dockers/conda/dcgpy/dcgpy_py38_linux.yml
+        python-version:   ${{ matrix.python-version }}
+        auto-activate-base: false
+
+
+    - shell: bash -l {0}
+      run: |
+        conda info
+        conda env list
+        conda list
+
+
+    - name: pip_install
+      shell: bash -l {0}
+      run: |
+          conda install -y conda-pack 
+          pip install utilmy pandas python-box fire
+          pip install -r   dockers/conda/dcgpy/dcgpy_py38_pip.yml
+
+
+
+    - name: conda_pack
+      shell: bash -l {0}
+      run: |
+          LS .
+          mkdir -p cpack
+          conda pack -n myenv  -o cpack/condapack_myenv.tar.gz
+

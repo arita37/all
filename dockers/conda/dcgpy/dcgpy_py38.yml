@@ -1,0 +1,11 @@
+name: dcgp
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python==3.8.1
+  - dcgp-python
+  - scipy
+  - numpy
+prefix: D:\_devs\Python01\ana3b\envs\dcgp

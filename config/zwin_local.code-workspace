@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.fontFamily": "consolas",
+		"terminal.integrated.fontSize": 13
+	}
+}

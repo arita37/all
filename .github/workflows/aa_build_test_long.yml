@@ -1,0 +1,147 @@
+name: AA_Build_test_long
+
+###  https://github.com/arita37/awesome-actions#static-analysis
+
+on:
+  workflow_dispatch:
+    inputs:
+
+
+  push:
+    branches:
+    - prod
+
+
+#  schedule:
+#     - cron:  '0 0 */2 * *'      #### 60mins
+#     #   #    - cron:  '*/10 * * * *'
+#     #   - cron:  '* * */2 * *'
+
+concurrency:
+  group: ${{ github.ref }}_long
+  cancel-in-progress: true
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    #- uses: actions/checkout@v1
+    #  ref: ${{ github.head_ref }
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Set up Python 3.7.*
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7.*
+
+    - name: Install pipenv
+      #uses: dschep/install-pipenv-action@v1
+      run: |
+           pip install pipenv==2022.4.30
+
+
+    - name: Cache pipenv virtualenv
+      id: cache-pipenv
+      uses: actions/cache@v1
+      with:
+        path: /opt/hostedtoolcache/Python/
+        key: ${{ runner.os }}-pipenv-${{ hashFiles('**py36_docfull.txt') }}
+
+
+    #- name: Install numpy
+    #  if: steps.cache-pipenv.outputs.cache-hit != 'true'
+    #  run: pip install numpy==1.18.2   pillow==6.2.1  scipy
+
+    - name: Install repo requirements  1
+      if: steps.cache-pipenv.outputs.cache-hit != 'true'
+      run: |
+           pip install -r  py36_min.txt
+
+
+
+    - name: Install repo requirements   2
+      if: steps.cache-pipenv.outputs.cache-hit != 'true'
+      run:  |
+        ls .
+        pip install -r  py36_docfull.txt
+
+
+
+    - name: Install utilmy
+      run:  |
+        pip install -e .
+        python -c "import utilmy"
+        python -c "import os, pandas as pd; print(os)"
+        pip list
+
+    ########  Runs All test  #######################################
+    - name: test_setup
+      run: |
+          mkdir -p    /home/runner/work/log_tmp/
+          chmod -R 777 .
+
+
+    ################################################################
+    # - name: test_deeplearning_torch
+    #   # continue-on-error: true
+    #   run: |
+    #       python test.py test_deeplearning_torch
+
+    - name: test.py test_import_all
+      continue-on-error: true
+      run: |
+          python test.py test_import_all
+
+
+
+    - name: utilmy/deeplearning/ttorch/model_ensemble.py
+      # continue-on-error: true
+      run: |
+          python utilmy/deeplearning/ttorch/model_ensemble.py   test_all
+
+
+
+    - name: utilmy/deeplearning/ttorch/util_torch.py
+      continue-on-error: true
+      run: |
+          python utilmy/deeplearning/ttorch/util_torch.py   test_all
+
+
+
+    - name: utilmy/deeplearning/ttorch/util_model.py
+      continue-on-error: true
+      run: |
+          python utilmy/deeplearning/ttorch/util_model.py     test_all
+
+
+
+
+    - name: utilmy/nlp/ttorch/sentences.py
+      #continue-on-error: true
+      run: |
+          python utilmy/nlp/ttorch/sentences.py  test_all
+
+
+
+    #################################################################
+    - name: utilmy/deeplearning/util_embedding.py
+      # continue-on-error: true
+      run: |
+          python utilmy/deeplearning/util_embedding.py test_all
+
+
+
+
+
+
+
+
+
+
+
+
+
