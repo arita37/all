@@ -74,8 +74,9 @@ jobs:
 
     - name: test_import
       run: |
+           pip install --upgrade utilmy
            python -c "import os, pandas as pd; print(os)"
-           # python -c "import utilmy"        
+           python -c "import utilmy"        
         
 
     #- name: Code Syntax Checker flake8

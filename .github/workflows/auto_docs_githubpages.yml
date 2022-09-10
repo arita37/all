@@ -59,7 +59,7 @@ jobs:
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
       run: |
            pip install -r  py36_min.txt
-           pip install utilmy
+
 
 
     - name: Install repo requirements   2
@@ -68,7 +68,7 @@ jobs:
         ls .
         pip install -r  py36_docfull.txt
         pip install protobuf==3.16.0
-        pip install onnx
+        # pip install onnx
         #pip install -r install/requirements_fake.txt
 
 
@@ -81,6 +81,7 @@ jobs:
 
     - name: test_import
       run: |
+           pip install --upgrade utilmy
            python -c "import os, pandas as pd; print(os)"
            python -c "import utilmy"        
            pip install -U sphinx  sphinx-rtd-theme  GitPython  rinohtype pygments
