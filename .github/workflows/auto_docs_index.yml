@@ -51,7 +51,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: /opt/hostedtoolcache/Python/
-        key: ${{ runner.os }}-pipenv-${{ hashFiles('**py36_docfull.txt') }}
+        key: ${{ runner.os }}-pipenv-${{ hashFiles('**py36_min.txt') }}
           
 
     #- name: Install numpy
@@ -69,7 +69,7 @@ jobs:
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
       run:  |
         ls .
-        pip install -r  py36_docfull.txt
+        pip install -r  py36_min.txt
 
 
     - name: test_import
