@@ -1,0 +1,18 @@
+a2.pecos.pecos.utils.featurization package
+==========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.utils.featurization.text
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization
+   :members:
+   :undoc-members:
+   :show-inheritance:

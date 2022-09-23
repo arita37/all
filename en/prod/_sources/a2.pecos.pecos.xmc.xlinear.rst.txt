@@ -1,0 +1,45 @@
+a2.pecos.pecos.xmc.xlinear package
+==================================
+
+Submodules
+----------
+
+a2.pecos.pecos.xmc.xlinear.evaluate module
+------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xlinear.evaluate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xlinear.model module
+---------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xlinear.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xlinear.predict module
+-----------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xlinear.predict
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xlinear.train module
+---------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xlinear.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.xmc.xlinear
+   :members:
+   :undoc-members:
+   :show-inheritance:

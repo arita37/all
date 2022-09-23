@@ -1,0 +1,30 @@
+a2.pecos.pecos.xmc package
+==========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.xmc.xlinear
+   a2.pecos.pecos.xmc.xtransformer
+
+Submodules
+----------
+
+a2.pecos.pecos.xmc.base module
+------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.xmc
+   :members:
+   :undoc-members:
+   :show-inheritance:

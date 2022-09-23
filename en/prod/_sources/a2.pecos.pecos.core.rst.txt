@@ -1,0 +1,21 @@
+a2.pecos.pecos.core package
+===========================
+
+Submodules
+----------
+
+a2.pecos.pecos.core.base module
+-------------------------------
+
+.. automodule:: a2.pecos.pecos.core.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.core
+   :members:
+   :undoc-members:
+   :show-inheritance:

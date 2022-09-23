@@ -1,0 +1,69 @@
+a2.pecos.pecos.xmc.xtransformer package
+=======================================
+
+Submodules
+----------
+
+a2.pecos.pecos.xmc.xtransformer.encode module
+---------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.encode
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.matcher module
+----------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.matcher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.model module
+--------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.module module
+---------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.network module
+----------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.network
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.predict module
+----------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.predict
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.xmc.xtransformer.train module
+--------------------------------------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.xmc.xtransformer
+   :members:
+   :undoc-members:
+   :show-inheritance:

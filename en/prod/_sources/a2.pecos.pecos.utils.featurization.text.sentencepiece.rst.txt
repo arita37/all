@@ -1,0 +1,37 @@
+a2.pecos.pecos.utils.featurization.text.sentencepiece package
+=============================================================
+
+Submodules
+----------
+
+a2.pecos.pecos.utils.featurization.text.sentencepiece.model module
+------------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.sentencepiece.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.utils.featurization.text.sentencepiece.predict module
+--------------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.sentencepiece.predict
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.utils.featurization.text.sentencepiece.train module
+------------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.sentencepiece.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.sentencepiece
+   :members:
+   :undoc-members:
+   :show-inheritance:

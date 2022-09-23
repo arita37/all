@@ -1,0 +1,29 @@
+a2.pecos.pecos.distributed.comm package
+=======================================
+
+Submodules
+----------
+
+a2.pecos.pecos.distributed.comm.abs\_dist\_comm module
+------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.comm.abs_dist_comm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.comm.mpi\_comm module
+------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.comm.mpi_comm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.distributed.comm
+   :members:
+   :undoc-members:
+   :show-inheritance:

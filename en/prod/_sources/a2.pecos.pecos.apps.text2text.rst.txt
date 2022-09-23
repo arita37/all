@@ -1,0 +1,45 @@
+a2.pecos.pecos.apps.text2text package
+=====================================
+
+Submodules
+----------
+
+a2.pecos.pecos.apps.text2text.evaluate module
+---------------------------------------------
+
+.. automodule:: a2.pecos.pecos.apps.text2text.evaluate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.apps.text2text.model module
+------------------------------------------
+
+.. automodule:: a2.pecos.pecos.apps.text2text.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.apps.text2text.predict module
+--------------------------------------------
+
+.. automodule:: a2.pecos.pecos.apps.text2text.predict
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.apps.text2text.train module
+------------------------------------------
+
+.. automodule:: a2.pecos.pecos.apps.text2text.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.apps.text2text
+   :members:
+   :undoc-members:
+   :show-inheritance:

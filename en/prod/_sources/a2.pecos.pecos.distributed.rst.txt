@@ -1,0 +1,20 @@
+a2.pecos.pecos.distributed package
+==================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.distributed.comm
+   a2.pecos.pecos.distributed.diagnostic_tools
+   a2.pecos.pecos.distributed.xmc
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.distributed
+   :members:
+   :undoc-members:
+   :show-inheritance:

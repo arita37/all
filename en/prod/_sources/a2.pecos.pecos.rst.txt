@@ -1,0 +1,23 @@
+a2.pecos.pecos package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.ann
+   a2.pecos.pecos.apps
+   a2.pecos.pecos.core
+   a2.pecos.pecos.distributed
+   a2.pecos.pecos.utils
+   a2.pecos.pecos.xmc
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos
+   :members:
+   :undoc-members:
+   :show-inheritance:

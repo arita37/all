@@ -1,0 +1,37 @@
+a2.pecos.pecos.utils.featurization.text package
+===============================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.utils.featurization.text.sentencepiece
+
+Submodules
+----------
+
+a2.pecos.pecos.utils.featurization.text.preprocess module
+---------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.preprocess
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.utils.featurization.text.vectorizers module
+----------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text.vectorizers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.utils.featurization.text
+   :members:
+   :undoc-members:
+   :show-inheritance:

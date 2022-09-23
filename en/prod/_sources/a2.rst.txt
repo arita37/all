@@ -1,0 +1,31 @@
+a2 package
+==========
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.datasets
+   a2.pecos
+   a2.transformers
+
+Submodules
+----------
+
+a2.dates module
+---------------
+
+.. automodule:: a2.dates
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2
+   :members:
+   :undoc-members:
+   :show-inheritance:

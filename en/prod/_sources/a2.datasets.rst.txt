@@ -1,0 +1,21 @@
+a2.datasets package
+===================
+
+Submodules
+----------
+
+a2.datasets.setup module
+------------------------
+
+.. automodule:: a2.datasets.setup
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:

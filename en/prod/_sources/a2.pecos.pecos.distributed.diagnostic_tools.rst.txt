@@ -1,0 +1,37 @@
+a2.pecos.pecos.distributed.diagnostic\_tools package
+====================================================
+
+Submodules
+----------
+
+a2.pecos.pecos.distributed.diagnostic\_tools.deepspeed\_comm module
+-------------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.diagnostic_tools.deepspeed_comm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.diagnostic\_tools.mpi\_comm module
+-------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.diagnostic_tools.mpi_comm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.diagnostic\_tools.test\_util module
+--------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.diagnostic_tools.test_util
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.distributed.diagnostic_tools
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,53 @@
+a2.pecos.pecos.distributed.xmc.xtransformer package
+===================================================
+
+Submodules
+----------
+
+a2.pecos.pecos.distributed.xmc.xtransformer.dist\_trainer module
+----------------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer.dist_trainer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.xmc.xtransformer.encode module
+---------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer.encode
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.xmc.xtransformer.model module
+--------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.xmc.xtransformer.module module
+---------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer.module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.xmc.xtransformer.train module
+--------------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xtransformer
+   :members:
+   :undoc-members:
+   :show-inheritance:

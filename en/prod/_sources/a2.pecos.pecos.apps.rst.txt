@@ -1,0 +1,18 @@
+a2.pecos.pecos.apps package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 20
+
+   a2.pecos.pecos.apps.text2text
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:

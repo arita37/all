@@ -1,0 +1,29 @@
+a2.pecos.pecos.distributed.xmc.xlinear package
+==============================================
+
+Submodules
+----------
+
+a2.pecos.pecos.distributed.xmc.xlinear.model module
+---------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xlinear.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+a2.pecos.pecos.distributed.xmc.xlinear.train module
+---------------------------------------------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xlinear.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: a2.pecos.pecos.distributed.xmc.xlinear
+   :members:
+   :undoc-members:
+   :show-inheritance:
