@@ -69,7 +69,7 @@ jobs:
       if: steps.cache-pipenv.outputs.cache-hit != 'true'
       run:  |
         ls .
-        pip install -r  py36_min.txt
+        # pip install -r  py36_min.txt
 
 
     - name: test_import
