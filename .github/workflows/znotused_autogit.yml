@@ -47,7 +47,7 @@ jobs:
            pip install -r  py36_min.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"

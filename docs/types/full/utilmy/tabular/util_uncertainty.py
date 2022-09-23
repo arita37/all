@@ -37,7 +37,7 @@ except : pass
 
 
 #############################################################################################
-from utilmy import log, log2
+from a2 import log, log2
 from mapie.regression import MapieRegressor
 from numpy import ndarray
 from sklearn.ensemble._forest import RandomForestClassifier
@@ -46,7 +46,7 @@ from sklearn.tree._classes import DecisionTreeClassifier
 from typing import List, Optional, Tuple, Type, Union
 
 def help():
-    from utilmy import help_create
+    from a2 import help_create
     ss = help_create(MNAME)
     print(ss)
 
@@ -220,7 +220,7 @@ def model_eval2(clf, Xval, yval, dirout=""):
   alpha = [0.2, 0.1, 0.05]
   y_pred_score, y_ps_score = mapie_score.predict(Xval, alpha=alpha)
 
-  from utilmy import save
+  from a2 import save
   save(mapie_score, dirout)
 
 
@@ -248,7 +248,7 @@ def test_data_classifier_digits() -> Tuple[ndarray, ndarray, ndarray, ndarray, L
     return X_train, X_test, y_train, y_test, feature_names
 
 
-from utilmy.utilmy import load_function_uri
+from a2.a2 import load_function_uri
 
 
 

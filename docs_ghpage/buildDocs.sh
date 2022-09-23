@@ -59,7 +59,7 @@ for current_version in ${versions}; do
       continue
    fi
 
-   #### Install utilmy
+   #### Install a2
    # pip install -e .
 
 
@@ -80,15 +80,15 @@ for current_version in ${versions}; do
 
 # Running Sphinx v4.4.0
 # Configuration error:
-# config directory doesn't contain a conf.py file (/__w/myutil/myutil/utilmy)
+# config directory doesn't contain a conf.py file (/__w/myutil/myutil/a2)
 # + rsync -av docs_ghpage/_build/html/ /tmp/tmp.EHpPcy6lE3/
 # rsync: change_dir "/__w/myutil/myutil//docs_ghpage/_build/html" failed: No such file or directory (2)
 # sending incremental file list
 # rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
 
       # Generate the RST
-      #sphinx-apidoc -f -o docs_ghpage/_build/rst/${current_language}/${current_version}/   utilmy/
-      sphinx-apidoc -f -d 20   -o     docs_ghpage/     utilmy/    *zz*
+      #sphinx-apidoc -f -o docs_ghpage/_build/rst/${current_language}/${current_version}/   a2/
+      sphinx-apidoc -f -d 20   -o     docs_ghpage/     a2/    *zz*
 
 
       # Generate HTML  from RST
@@ -96,12 +96,12 @@ for current_version in ${versions}; do
  
 
       # PDF #
-      # sphinx-build -b rinoh utilmy/ docs_ghpage/_build/rinoh -D language="${current_language}"
+      # sphinx-build -b rinoh a2/ docs_ghpage/_build/rinoh -D language="${current_language}"
       # mkdir -p "${docroot}/${current_language}/${current_version}"
       # cp "docs_ghpage/_build/rinoh/target.pdf" "${docroot}/${current_language}/${current_version}/helloWorld-docs_${current_language}_${current_version}.pdf"
  
       # EPUB #
-      # sphinx-build -b epub utilmy/ docs_ghpage/_build/epub -D language="${current_language}"
+      # sphinx-build -b epub a2/ docs_ghpage/_build/epub -D language="${current_language}"
       # mkdir -p "${docroot}/${current_language}/${current_version}"
       # cp "docs_ghpage/_build/epub/target.epub" "${docroot}/${current_language}/${current_version}/helloWorld-docs_${current_language}_${current_version}.epub"
  
@@ -113,7 +113,7 @@ for current_version in ${versions}; do
 done
  
 # return to master branch
-git checkout master
+#git checkout master
  
 #######################
 # Update GitHub Pages #

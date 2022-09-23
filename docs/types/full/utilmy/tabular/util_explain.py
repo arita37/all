@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-MNAME = "utilmy.tabular.util_explain"
+MNAME = "a2.tabular.util_explain"
 """#
 Doc::
    utils for model explanation
@@ -22,7 +22,7 @@ from imodels.util.convert import tree_to_code
 
 
 #############################################################################################
-from utilmy import log, log2
+from a2 import log, log2
 from imodels.algebraic.slim import SLIMRegressor
 from imodels.rule_set.rule_fit import RuleFitRegressor
 from imodels.tree.figs import FIGSRegressor
@@ -30,7 +30,7 @@ from numpy import ndarray
 from typing import List, Optional, Tuple, Union
 
 def help():
-    from utilmy import help_create
+    from a2 import help_create
     print( help_create(__file__) )
 
 
@@ -345,7 +345,7 @@ def model_fit(name:str='imodels.SLIMRegressor', model_pars:dict=None, data_pars:
     from imodels.util.convert import tree_to_code
     from sklearn import metrics
 
-    from utilmy.utils import load_function_uri
+    from a2.utils import load_function_uri
     d = Box(data_pars) if data_pars is not None else Box({})
 
     log("#### model load")    
@@ -476,7 +476,7 @@ def test_data_classifier_diabetes() -> Tuple[ndarray, ndarray, ndarray, ndarray,
     return X_train, X_test, y_train, y_test, feature_names
     
 
-from utilmy.utilmy import load_function_uri
+from a2.a2 import load_function_uri
 
 
 

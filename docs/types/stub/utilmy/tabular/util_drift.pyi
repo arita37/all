@@ -1,4 +1,4 @@
-os.getcwd /home/runner/work/myutil/myutil/utilmy/tabular
+os.getcwd /home/runner/work/myutil/myutil/a2/tabular
 from numpy import (
     float64,
     ndarray,

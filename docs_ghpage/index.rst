@@ -9,7 +9,7 @@ Welcome to helloWorld's documentation!
    modules
 
 
-.. uml:: utilmy
+.. uml:: a2
     :classes:
     :packages:
 

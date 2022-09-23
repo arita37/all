@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-MNAME= "utilmy.dates"
+MNAME= "a2.dates"
 """# 
 Doc::
  dates utilities
@@ -8,10 +8,10 @@ Doc::
 import os, sys, time, datetime,inspect, json, yaml, gc, numpy as np, pandas as pd
 
 #############################################################################################
-from utilmy.utilmy import log, log2
+from a2.a2 import log, log2
 
 def help():
-    from utilmy import help_create
+    from a2 import help_create
     print(  help_create(__file__) )
 
 

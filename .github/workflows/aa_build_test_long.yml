@@ -71,7 +71,7 @@ jobs:
 
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -98,40 +98,40 @@ jobs:
 
 
 
-    - name: utilmy/deeplearning/ttorch/model_ensemble.py
+    - name: a2/deeplearning/ttorch/model_ensemble.py
       # continue-on-error: true
       run: |
-          python utilmy/deeplearning/ttorch/model_ensemble.py   test_all
+          python a2/deeplearning/ttorch/model_ensemble.py   test_all
 
 
 
-    - name: utilmy/deeplearning/ttorch/util_torch.py
+    - name: a2/deeplearning/ttorch/util_torch.py
       continue-on-error: true
       run: |
-          python utilmy/deeplearning/ttorch/util_torch.py   test_all
+          python a2/deeplearning/ttorch/util_torch.py   test_all
 
 
 
-    - name: utilmy/deeplearning/ttorch/util_model.py
+    - name: a2/deeplearning/ttorch/util_model.py
       continue-on-error: true
       run: |
-          python utilmy/deeplearning/ttorch/util_model.py     test_all
+          python a2/deeplearning/ttorch/util_model.py     test_all
 
 
 
 
-    - name: utilmy/nlp/ttorch/sentences.py
+    - name: a2/nlp/ttorch/sentences.py
       #continue-on-error: true
       run: |
-          python utilmy/nlp/ttorch/sentences.py  test_all
+          python a2/nlp/ttorch/sentences.py  test_all
 
 
 
     #################################################################
-    - name: utilmy/deeplearning/util_embedding.py
+    - name: a2/deeplearning/util_embedding.py
       # continue-on-error: true
       run: |
-          python utilmy/deeplearning/util_embedding.py test_all
+          python a2/deeplearning/util_embedding.py test_all
 
 
 

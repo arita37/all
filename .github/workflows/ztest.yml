@@ -32,9 +32,9 @@ jobs:
       uses: dschep/install-pipenv-action@v1
       
   
-    - name: Install utilmy
+    - name: Install a2
       run:  |
-        while true ;do pip install --upgrade utilmy  &&  pip uninstall utilmy    done 
+        while true ;do pip install --upgrade utilmy  &&  pip uninstall a2    done 
 
 
           

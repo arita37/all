@@ -49,7 +49,7 @@ jobs:
            pip install -r  py36_min.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -117,8 +117,8 @@ jobs:
     - name: test_decorators 
       run: python test.py test_decorators
 
-    - name: test_utilmy
-      run: python test.py test_utilmy
+    - name: test_a2
+      run: python test.py test_a2
 
     - name: test_viz_vizhtml
       run:  python test.py   test_viz_vizhtml

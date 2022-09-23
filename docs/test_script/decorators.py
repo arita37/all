@@ -2,7 +2,7 @@ from threading import Thread
 import cProfile, pstats, io, os, errno, signal, time
 from functools import wraps
 from contextlib import contextmanager
-from utilmy.debug import log
+from a2.debug import log
 
 
 
@@ -14,7 +14,7 @@ def test_decorators():
     """
     #### python test.py   test_decorators
     """
-    from utilmy.decorators import thread_decorator, timeout_decorator, profiler_context,profiler_decorator, profiler_decorator_base
+    from a2.decorators import thread_decorator, timeout_decorator, profiler_context,profiler_decorator, profiler_decorator_base
 
     @thread_decorator
     def thread_decorator_test():
@@ -36,7 +36,7 @@ def test_decorators():
 
 
 def test_decorators2():
-    from utilmy.decorators import profiler_decorator, profiler_context
+    from a2.decorators import profiler_decorator, profiler_context
 
     @profiler_decorator
     def profiled_sum():
@@ -49,14 +49,14 @@ def test_decorators2():
        print(x)
 
 
-    from utilmy import profiler_start, profiler_stop
+    from a2 import profiler_start, profiler_stop
     profiler_start()
     print(sum(range(1000000)))
     profiler_stop()
 
 
     ###################################################################################
-    from utilmy.decorators import timer_decorator
+    from a2.decorators import timer_decorator
     @timer_decorator
     def dummy_func():
        time.sleep(2)
@@ -208,7 +208,7 @@ def test0():
     with profiler_context():
         x = sum(range(1000000))
         print(x)
-    from utilmy import profiler_start, profiler_stop
+    from a2 import profiler_start, profiler_stop
     profiler_start()
     print(sum(range(1000000)))
     profiler_stop()

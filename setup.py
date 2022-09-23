@@ -48,9 +48,9 @@ ss1 = f"""
 
 Stats usage:
    > 1 million Donwload !
-   https://pepy.tech/project/utilmy
+   https://pepy.tech/project/a2
 
-   https://pypistats.org/packages/utilmy
+   https://pypistats.org/packages/a2
 
 
 
@@ -58,7 +58,7 @@ Doc Access:
    https://tinyurl.com/2p848smu
 
 
-   https://groups.google.com/g/utilmy
+   https://groups.google.com/g/a2
 
 
 
@@ -75,9 +75,9 @@ long_description = f""" ``` """ + ss1 +  """```"""
 
 
 ### Packages  ########################################################
-packages = ["utilmy"] + ["utilmy." + p for p in find_packages("utilmy")]
-#packages = ["utilmy"] + ["utilmy.viz" + p for p in find_packages("utilmy.viz")]
-packages = ["utilmy"] + [ p for p in  find_packages(include=['utilmy.*']) ]
+packages = ["a2"] + ["a2." + p for p in find_packages("a2")]
+#packages = ["a2"] + ["a2.viz" + p for p in find_packages("a2.viz")]
+packages = ["a2"] + [ p for p in  find_packages(include=['a2.*']) ]
 print(packages)
 
 
@@ -88,23 +88,23 @@ scripts = [     ]
 ### CLI Scripts  ###################################################   
 entry_points={ 'console_scripts': [
 
-    'docs      = utilmy.docs.cli:run_cli',
+    'docs      = a2.docs.cli:run_cli',
 
-    'templates = utilmy.templates.cli:run_cli',
+    'templates = a2.templates.cli:run_cli',
 
     #### generic
-    'utilmy = utilmy.cli:run_cli_utilmy',
+    'a2 = a2.cli:run_cli_a2',
 
 
     #### generic for All code
-    'utilmy2 = utilmy.cli:run_all_utilmy2',
+    'a22 = a2.cli:run_all_a22',
 
     ###  sspark
-    'sspark = utilmy.sspark.src.util_spark:run_cli_sspark',
+    'sspark = a2.sspark.src.util_spark:run_cli_sspark',
 
 
     ###  image
-    'image = utilmy.images.util_image:run_cli',
+    'image = a2.images.util_image:run_cli',
 
  ] }
 
@@ -113,7 +113,7 @@ entry_points={ 'console_scripts': [
 
 ##################################################################   
 setup(
-    name="utilmy",
+    name="a2",
     description="utils",
     keywords='utils',
     
@@ -190,19 +190,19 @@ def os_bash_append(cmd):
     return False
 
 
-#### Add environemment variables  utilmy path
+#### Add environemment variables  a2 path
 try :
-    repopath = os.path.dirname( os.path.abspath(__file__).replace("\\", "/") )  + "/utilmy/"
+    repopath = os.path.dirname( os.path.abspath(__file__).replace("\\", "/") )  + "/a2/"
     if 'win' in sys.platform :
-        os.system(f" set  utilmy='{repopath}/' ")  ### Any new session
-        os.system(f" setx utilmy='{repopath}/' ")  ### Current session
+        os.system(f" set  a2='{repopath}/' ")  ### Any new session
+        os.system(f" setx a2='{repopath}/' ")  ### Current session
 
     elif 'linux' in sys.platform :
-        os_bash_append(f"""export utilmy={repopath}/    """)
-        os.system(f" export utilmy={repopath}/ ")
+        os_bash_append(f"""export a2={repopath}/    """)
+        os.system(f" export a2={repopath}/ ")
         print(' source  ~/.bashrc  ')
 
-    print(" $utilmy  can be used as shortcut of the package library path for Command Line Usage")    
+    print(" $a2  can be used as shortcut of the package library path for Command Line Usage")    
 
 except :
     pass
@@ -224,7 +224,7 @@ def os_cmd_to_bashrc(cmd):
 
 
 #### Spark Alias for command line
-# cmd= "alias sspark='python $utilmy/sspark/src/util_spark.py '"
+# cmd= "alias sspark='python $a2/sspark/src/util_spark.py '"
 # os_cmd_to_bashrc(cmd)
 
 
@@ -267,7 +267,7 @@ def os_cmd_to_bashrc(cmd):
 
 
 """
-alias sspark='python /workspace/myutil/utilmy/sspark/src/util_spark.py'
+alias sspark='python /workspace/myutil/a2/sspark/src/util_spark.py'
 
 
 from setuptools import setup, find_packages

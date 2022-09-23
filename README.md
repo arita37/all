@@ -1,13 +1,13 @@
 
 [![Build and Test , Package PyPI](https://github.com/arita37/myutil/actions/workflows/build%20and%20release.yml/badge.svg)](https://github.com/arita37/myutil/actions/workflows/build%20and%20release.yml)
 
-[     https://pypi.org/project/utilmy/#history ](https://pypi.org/project/utilmy/#history)
+[     https://pypi.org/project/a2/#history ](https://pypi.org/project/a2/#history)
 
 
 ## utilnmy
     1000s of One liner function utilities.
     
-    https://packagegalaxy.com/python/utilmy
+    https://packagegalaxy.com/python/a2
 
 
     https://arita37.github.io/myutil/en/zdocs_y23487teg65f6/genindex.html

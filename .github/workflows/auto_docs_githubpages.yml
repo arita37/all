@@ -1,6 +1,6 @@
 name: Auto docs_github_pages arita37.github.io/all/en/prod/
  
-### target page :  https://arita37.github.io/myutil/en/zdocs_y23487teg65f6/utilmy.html#module-utilmy.cli
+### target page :  https://arita37.github.io/myutil/en/zdocs_y23487teg65f6/a2.html#module-a2.cli
 
 
 on:
@@ -73,7 +73,7 @@ jobs:
         #pip install -r install/requirements_fake.txt
 
 
-    #- name: Install utilmy
+    #- name: Install a2
     #  run:  |
     #    pip install -e .
     #    python -c "import utilmy"
@@ -99,7 +99,7 @@ jobs:
 
     - name: Execute script to build our documentation and update pages
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
       run: |
         chmod -R 777 docs_ghpage
         docs_ghpage/buildDocs.sh

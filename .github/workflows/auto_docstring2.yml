@@ -68,7 +68,7 @@ jobs:
         #pip install -r install/requirements_fake.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -99,7 +99,7 @@ jobs:
     - name: Update of docstring
       #vcontinue-on-error: true
       run:  |
-        python  utilmy/docs/docstring.py  docstring_update1  --dirin utilmy/  --dirout utilmy/  --overwrite true   --test false --nfile 100000
+        python  a2/docs/docstring.py  docstring_update1  --dirin a2/  --dirout a2/  --overwrite true   --test false --nfile 100000
 
         git add -A || echo 'nothing'
         git commit -am "docstring" ||   echo 'nothing'
@@ -172,8 +172,8 @@ jobs:
     - name: test_decorators 
       run: python test.py test_decorators
 
-    - name: test_utilmy
-      run: python test.py test_utilmy
+    - name: test_a2
+      run: python test.py test_a2
 
     - name: test_viz_vizhtml
       run:  python test.py   test_viz_vizhtml
@@ -204,7 +204,7 @@ jobs:
     #       commit_options: '--no-verify --signoff'
 
     #       # Optional glob pattern of files which should be added to the commit
-    #       file_pattern:  utilmy/**/*.py 
+    #       file_pattern:  a2/**/*.py 
 
     #       # Optional local file path to the repository
     #       # Defaults to the root of the repository

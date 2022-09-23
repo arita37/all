@@ -68,7 +68,7 @@ jobs:
         pip install -r  py36_docfull.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -107,7 +107,7 @@ jobs:
     - name: test_cli
       continue-on-error: true
       run: |
-          python utilmy/cli.py help
+          python a2/cli.py help
 
 
 
@@ -115,7 +115,7 @@ jobs:
     - name:  sspark/src/util_spark.py
       # continue-on-error: true
       run: |
-          python utilmy/sspark/src/util_spark.py test_all
+          python a2/sspark/src/util_spark.py test_all
 
 
 
@@ -171,8 +171,8 @@ jobs:
     - name: test_decorators
       run: python test.py test_decorators
 
-    - name: test_utilmy
-      run: python test.py test_utilmy
+    - name: test_a2
+      run: python test.py test_a2
 
     - name: test_viz_vizhtml
       run:  python test.py   test_viz_vizhtml

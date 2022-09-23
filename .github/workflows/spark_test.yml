@@ -23,7 +23,7 @@ jobs:
 
       - name: Full Run
         # continue-on-error: true
-        run: docker-compose exec -T spark python utilmy/spark/prod.py  --config_path  utilmy/spark/config/config.yaml       
+        run: docker-compose exec -T spark python a2/spark/prod.py  --config_path  a2/spark/config/config.yaml       
 
 
 

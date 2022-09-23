@@ -101,7 +101,7 @@ RUN conda env -n dcgpy  python=3.8.1 && source activate dcgpy && \
 #threadpoolctl             3.1.0                    pypi_0    pypi
 #ucrt                      10.0.20348.0         h57928b3_0    conda-forge
 #urllib3                   1.26.11                  pypi_0    pypi
-#utilmy                    0.1.16609156             pypi_0    pypi
+#a2                    0.1.16609156             pypi_0    pypi
 #vc                        14.2                 hb210afc_6    conda-forge
 #vs2015_runtime            14.29.30037          h902a5da_6    conda-forge
 #wheel                     0.37.1             pyhd8ed1ab_0    conda-forge

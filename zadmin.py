@@ -2,7 +2,7 @@
 import os
 
 
-from utilmy.util_download import download_github
+from a2.util_download import download_github
 
 
 
@@ -10,14 +10,14 @@ from utilmy.util_download import download_github
 ll = {
       0 : {
          'url'   : ('https://github.com/TylerYep/torchinfo.git'  , 'main')
-        ,'copy'  :  [ ('fromfolder', '/utilmy' ) ]
+        ,'copy'  :  [ ('fromfolder', '/a2' ) ]
         ,'rename':  [ ('ptorch', 'totch2') ]
       }
 
 
      ,1 : {
          'url'   : 'https://github.com/TylerYep/torchinfo.git'
-        ,'copy'  :  [ ('fromfolder', '/utilmy' ) ]
+        ,'copy'  :  [ ('fromfolder', '/a2' ) ]
         ,'rename':  [ ('ptorch', 'totch2') ]
       }
 
@@ -34,7 +34,7 @@ def download_overwrite():
 
 
 
-      2) Copy Overwrite   folderXXX   to utilmy/my
+      2) Copy Overwrite   folderXXX   to a2/my
 
 
 

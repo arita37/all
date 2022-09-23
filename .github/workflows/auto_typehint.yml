@@ -63,7 +63,7 @@ jobs:
            pip install -r  py36_min.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -106,11 +106,11 @@ jobs:
         pip install --upgrade monkeytype
 
         ### in docs/types folder
-        # python  utilmy/docs/generate_typehint.py  run_utilmy --nfile 10000
+        # python  a2/docs/generate_typehint.py  run_a2 --nfile 10000
 
 
         ### in current prod code folder
-        python  utilmy/docs/generate_typehint.py  run_utilmy_overwrite --nfile 10000
+        python  a2/docs/generate_typehint.py  run_a2_overwrite --nfile 10000
 
 
         git add -A || echo 'nothing'
@@ -177,8 +177,8 @@ jobs:
     - name: test_decorators 
       run: python test.py test_decorators
 
-    - name: test_utilmy
-      run: python test.py test_utilmy
+    - name: test_a2
+      run: python test.py test_a2
 
     - name: test_viz_vizhtml
       run:  python test.py   test_viz_vizhtml

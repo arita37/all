@@ -9,7 +9,7 @@ All related to distributed compute and atomic read/write
 import os, sys, socket, platform, time, gc,logging, random
 
 ###############################################################################################
-from utilmy.utilmy import log, log2
+from a2.a2 import log, log2
 
 def help():
     """function help.
@@ -19,8 +19,8 @@ def help():
             Returns:
                 
     """
-    from utilmy import help_create
-    ss  = help_create("utilmy.distributed", prefixs= [ 'test'])  #### Merge test code
+    from a2 import help_create
+    ss  = help_create("a2.distributed", prefixs= [ 'test'])  #### Merge test code
     ss += HELP
     print(ss)
 

@@ -8,21 +8,21 @@ Docs::
         Rules to follow :
            Put import only inside the function.
            def  test_{pythonfilename.py}() :
-               from utilmy import parallel as m
+               from a2 import parallel as m
                m.test_all()
 """
 import os, sys, time, datetime,inspect, random, pandas as pd, random, numpy as np, glob
 
 
 #### NEVER IMPORT HERE  !!!!
-# from utilmy import pd_random, pd_generate_data
+# from a2 import pd_random, pd_generate_data
 # from tensorflow.python.ops.gen_array_ops import one_hot
 
 #########################################################################################
 def log(*s):
    print(*s, flush=True)
 
-def import_module(mname:str='utilmy.oos'):
+def import_module(mname:str='a2.oos'):
     import importlib
     m = importlib.import_module(mname)
     return m
@@ -61,7 +61,7 @@ def test_import():
     import utilmy.deeplearning.ttorch.util_torch
     import utilmy.deeplearning.ttorch.util_model
     import utilmy.deeplearning.ttorch.model_ensemble
-    import utilmy.utilmy
+    import utilmy.a2
     import utilmy.ppandas
     # import utilmy.nlp.ttorch.sentences
     import utilmy.distributed
@@ -76,7 +76,7 @@ def test_import_all():
     import utilmy.deeplearning.ttorch.util_torch
     import utilmy.deeplearning.ttorch.util_model
     import utilmy.deeplearning.ttorch.model_ensemble
-    import utilmy.utilmy
+    import utilmy.a2
     import utilmy.ppandas
     # import utilmy.nlp.ttorch.sentences
     import utilmy.distributed
@@ -85,12 +85,12 @@ def test_import_all():
 
 
 
-def test_utilmy():
-   from utilmy import utilmy as m
+def test_a2():
+   from a2 import utilmy as m
    m.test_all()
    
    
-   #####  Bug of globals() in utilmy.py #################################################
+   #####  Bug of globals() in a2.py #################################################
    log("\n##### Session  ")
    sess = m.Session("ztmp/session")
 
@@ -116,21 +116,21 @@ def test_utilmy():
 
 ##########################################################################################
 def test_images():
-    from utilmy.images import util_image as m
+    from a2.images import util_image as m
     m.test_all()
 
 
 ##########################################################################################
 def test_ppandas():
-    from utilmy import ppandas as m
+    from a2 import ppandas as m
     m.test_all()
 
    
 #########################################################################################
 def test_docs_cli():
-    """  from utilmy.docs.generate_doc import run_markdown, run_table 
+    """  from a2.docs.generate_doc import run_markdown, run_table 
     """
-    cmd = "doc-gen  --repo_dir utilmy/      --doc_dir docs/"
+    cmd = "doc-gen  --repo_dir a2/      --doc_dir docs/"
     os.system(cmd)
     os.system('ls docs/')
    
@@ -138,41 +138,41 @@ def test_docs_cli():
 #########################################################################################
 def test_adatasets():
     """ #### python test.py   test_adatasets """
-    from utilmy import adatasets as m ;   m.test_all()      
+    from a2 import adatasets as m ;   m.test_all()      
 
 
 #########################################################################################
 def test_nnumpy():
     """#### python test.py   test_nnumpy  """
-    from utilmy import nnumpy as m ; m.test_all()
+    from a2 import nnumpy as m ; m.test_all()
 
 
 
 #########################################################################################
 def test_dates():
     #### python test.py   test_dates
-    from utilmy import dates as m  ; m.test_all()
+    from a2 import dates as m  ; m.test_all()
 
 
 #########################################################################################
 def test_decorators():
     #### python test.py   test_decorators
-    from utilmy import  decorators as m  ;m.test_all()
+    from a2 import  decorators as m  ;m.test_all()
 
 
    
 #########################################################################################
 def test_nlp():
-    from utilmy.nlp import util_cluster as m ; m.test_all()  
-    from utilmy.nlp import util_gensim as m ;  m.test_all()  
-    # from utilmy.nlp.torch import sentences   as m ;  m.test_all()      
+    from a2.nlp import util_cluster as m ; m.test_all()  
+    from a2.nlp import util_gensim as m ;  m.test_all()  
+    # from a2.nlp.torch import sentences   as m ;  m.test_all()      
 
    
 #########################################################################################
 def test_viz_vizhtml():
-   from utilmy.viz import vizhtml as m
+   from a2.viz import vizhtml as m
    log("Visualization ")
-   log(" from utilmy.viz import vizhtml as vi     ")
+   log(" from a2.viz import vizhtml as vi     ")
    m.test_all()
 
 
@@ -181,71 +181,71 @@ def test_viz_vizhtml():
 
 #########################################################################################
 def test_parallel():
-   from utilmy import parallel as m  ;  m.test_all()
+   from a2 import parallel as m  ;  m.test_all()
    
 
 #########################################################################################
 def test_distributed():
-   from utilmy import distributed as m ;m.test_all()
+   from a2 import distributed as m ;m.test_all()
 
    
   
 #######################################################################################
 def test_utils():
-    from utilmy import utils as m ;  m.test_all() 
+    from a2 import utils as m ;  m.test_all() 
          
 
 #######################################################################################
 def test_oos():
-   from utilmy import oos as m ;  m.test_all() 
+   from a2 import oos as m ;  m.test_all() 
 
 
 #######################################################################################
 def test_tabular():
-   from utilmy.tabular import util_sparse as m    ;     m.test_all()
-   from utilmy.tabular import util_explain as m  ;      m.test_all()
-   from utilmy.tabular import util_uncertainty as m  ;  m.test_all()
+   from a2.tabular import util_sparse as m    ;     m.test_all()
+   from a2.tabular import util_explain as m  ;      m.test_all()
+   from a2.tabular import util_uncertainty as m  ;  m.test_all()
 
    
 #########################################################################################
 def test_deeplearning_keras():
-    from utilmy.deeplearning.kkeras import  util_similarity as m;  m.test_all()
+    from a2.deeplearning.kkeras import  util_similarity as m;  m.test_all()
 
 
 
 #########################################################################################
 def test_deeplearning_torch():
-    from utilmy.deeplearning.ttorch import  rule_encoder as m ;  m.test_all()
-    # from utilmy.deeplearning.ttorch import  sentences as m ;  m.test_all()
+    from a2.deeplearning.ttorch import  rule_encoder as m ;  m.test_all()
+    # from a2.deeplearning.ttorch import  sentences as m ;  m.test_all()
 
 
 #######################################################################################
 def test_deeplearning():
-   from utilmy.deeplearning import util_yolo as m ;  m.test_all()
+   from a2.deeplearning import util_yolo as m ;  m.test_all()
 
 
 #######################################################################################
 def test_recsys():
-   from utilmy.recsys import ab as m ; m.test_all()
-   from utilmy.recsys import metric as m ; m.test_all()
+   from a2.recsys import ab as m ; m.test_all()
+   from a2.recsys import metric as m ; m.test_all()
 
   
 
 #######################################################################################
 def test_compile():
-   from utilmy.docs import format as m
+   from a2.docs import format as m
 
 
 
 
 #######################################################################################
 def test_long():
-    from utilmy.nlp.ttorch import sentences   as m ;  m.test_all()      
+    from a2.nlp.ttorch import sentences   as m ;  m.test_all()      
 
 
 
 def test_spark():
-    from utilmy.sspark.src import util_spark  as m ;  m.test_all()      
+    from a2.sspark.src import util_spark  as m ;  m.test_all()      
 
 
 
@@ -255,7 +255,7 @@ import utilmy as  uu
 
 #######################################################################################
 def test_all():
-    test_utilmy()
+    test_a2()
     test_decorators()
     test_ppandas()  
     test_nlp()

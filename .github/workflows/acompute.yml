@@ -52,7 +52,7 @@ jobs:
            pip install -r  py36_min.txt
 
 
-    - name: Install utilmy
+    - name: Install a2
       run:  |
         pip install -e .
         python -c "import utilmy"
@@ -83,7 +83,7 @@ jobs:
 
     ################################################################
     - name: test_compute
-      run: python  utilmy/optim/gp.py   2>&1 | tee -a  docs/zlog_gp.py
+      run: python  a2/optim/gp.py   2>&1 | tee -a  docs/zlog_gp.py
 
 
           
@@ -103,7 +103,7 @@ jobs:
       continue-on-error: true
       run: |
            ls
-           #docs all      --repo_dir utilmy/  --dirout docs/
+           #docs all      --repo_dir a2/  --dirout docs/
            #rm -rf docs/doc_prod.md
            #rm -rf docs/output_repo.csv
            #pip freeze > docs/piplist.txt

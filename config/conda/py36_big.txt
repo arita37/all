@@ -10,18 +10,18 @@ cloudpickle
 flake8
 
 ########################################################
-#### utilmy.ppandas
+#### a2.ppandas
 pyarrow
 polars
 
 ########################################################
-#### utilmy.date
+#### a2.date
 arrow
 tqdm
 
 
 ########################################################
-#### utilmy.debug
+#### a2.debug
 pyinstrument  ### code profile
 icecream  ### debugger
 rebound-cli  ## stackoverflow
@@ -30,12 +30,12 @@ snoop
 
 
 ########################################################
-#### utilmy.utils
+#### a2.utils
 wget
 psutil
 
 ########################################################
-#### utilmy.text
+#### a2.text
 datasketch  ### lSH
 rapidfuzz
 editdistance
@@ -46,7 +46,7 @@ essential-generators==1.0
 
 
 ########################################################
-#### utilmy.viz.html
+#### a2.viz.html
 seaborn
 tqdm
 matplotlib
@@ -63,22 +63,22 @@ pyvis
 dateparser
 
 #########################################################
-#### utilmy.down
+#### a2.down
 wget
 
 
 ########################################################
-#### utilmy.docs
+#### a2.docs
 stdlib_list
 
 
 ########################################################
-#### utilmy.keyvalue
+#### a2.keyvalue
 diskcache
 
 
 ########################################################
-#### utilmy.adatasets
+#### a2.adatasets
 scikit-learn
 pmlb
 pandas_profiling
@@ -86,13 +86,13 @@ pandas_profiling
 
 
 ########################################################
-#### utilmy.dates
+#### a2.dates
 holidays
 
 
 
 ###############################
-## utilmy.tabular
+## a2.tabular
 #statsmodels==0.11.1
 statsmodels
 # hypothetical
@@ -104,12 +104,12 @@ mapie  ### Uncertainty est.
 
 
 ###############################
-## utilmy.recsys
+## a2.recsys
 ## abracadabra
 
 
 ########################################################
-#### utilmy.deeplearning
+#### a2.deeplearning
 faiss-cpu
 tensorflow-cpu==2.2.3
 

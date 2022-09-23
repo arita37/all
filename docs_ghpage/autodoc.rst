@@ -3,7 +3,7 @@
 
 =============
  
-.. automodule:: utilmy
+.. automodule:: a2
   :imported-members:
   :members:
   :undoc-members:

@@ -8,7 +8,7 @@ scipy
 loguru
 
 ########################################################
-#### utilmy.utils
+#### a2.utils
 psutil
 tqdm
 
@@ -16,16 +16,16 @@ tqdm
 
 
 ########################################################
-#### utilmy.docs
+#### a2.docs
 stdlib_list
 
 
 ########################################################
-#### utilmy.keyvalue
+#### a2.keyvalue
 diskcache
 
 
 ########################################################
-#### utilmy.adatasets
+#### a2.adatasets
 # scikit-learn
 

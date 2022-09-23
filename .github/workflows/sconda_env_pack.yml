@@ -64,7 +64,7 @@ jobs:
       shell: bash -l {0}
       run: |
           conda install -y conda-pack 
-          pip install utilmy pandas python-box fire
+          pip install a2 pandas python-box fire
           pip install -r   dockers/conda/dcgpy/dcgpy_py38_pip.yml
 
 

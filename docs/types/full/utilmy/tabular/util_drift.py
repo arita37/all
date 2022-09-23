@@ -1,4 +1,4 @@
-os.getcwd /home/runner/work/myutil/myutil/utilmy/tabular
+os.getcwd /home/runner/work/myutil/myutil/a2/tabular
 ### drift
 # coding=utf-8
 """# 
@@ -23,16 +23,16 @@ https://pypi.org/project/pysie/#description
 
 """
 import os, sys, pandas as pd, numpy as np
-from utilmy.utilmy import pd_generate_data
-from utilmy.prepro.util_feature import  pd_colnum_tocat, pd_colnum_tocat_stat
+from a2.a2 import pd_generate_data
+from a2.prepro.util_feature import  pd_colnum_tocat, pd_colnum_tocat_stat
 
 
 #################################################################################################
-from utilmy.utilmy import log, log2
+from a2.a2 import log, log2
 
 def help():
-    from utilmy import help_create
-    print( help_create("utilmy.tabular") )
+    from a2 import help_create
+    print( help_create("a2.tabular") )
 
     
 #################################################################################################
@@ -65,17 +65,17 @@ def test_all():
 
         
         log("Testing heteroscedacity...")
-        # from utilmy.tabular import test_heteroscedacity
+        # from a2.tabular import test_heteroscedacity
         log(test_heteroscedacity(y_test,y_pred))
     
         log("Testing test_mutualinfo()...")
-        # from utilmy.tabular import test_mutualinfo
+        # from a2.tabular import test_mutualinfo
         df1 = pd_generate_data(7, 100)
 
         test_mutualinfo(df1["0"],df1[["1","2","3"]],colname="test")
 
         log("Testing hypothesis_test()...")
-        #from utilmy.tabular import test_hypothesis
+        #from a2.tabular import test_hypothesis
         log(test_hypothesis(X_train, X_test,"chisquare"))
 
     def custom_stat(values, axis=1):
@@ -86,7 +86,7 @@ def test_all():
 
     def test_estimator():
         log("Testing estimators()...")
-        # from utilmy.tabular import estimator_std_normal,estimator_boostrap_bayes,estimator_bootstrap
+        # from a2.tabular import estimator_std_normal,estimator_boostrap_bayes,estimator_bootstrap
         log(estimator_std_normal(y_pred))
         log(estimator_boostrap_bayes(y_pred))
         estimator_bootstrap(y_pred, custom_stat=custom_stat)
@@ -95,10 +95,10 @@ def test_all():
     
     def test_pd_utils():
         log("Testing pd_utils ...")
-        #from utilmy.tabular import pd_train_test_split_time,pd_to_scipy_sparse_matrix,pd_stat_correl_pair,\
+        #from a2.tabular import pd_train_test_split_time,pd_to_scipy_sparse_matrix,pd_stat_correl_pair,\
         #    pd_stat_pandas_profile,pd_stat_distribution_colnum,pd_stat_histogram,pd_stat_shift_trend_changes,\
         #    pd_stat_shift_trend_correlation,pd_stat_shift_changes
-        from utilmy.prepro.util_feature import pd_colnum_tocat_stat
+        from a2.prepro.util_feature import pd_colnum_tocat_stat
 
         pd_train_test_split_time(df, coltime="block")
         pd_to_scipy_sparse_matrix(df)
@@ -127,7 +127,7 @@ def test_all():
     def test_drift_detect():
         import tensorflow as tf
         from tensorflow.keras.layers import Dense,InputLayer,Dropout
-        # from utilmy.tabular import pd_data_drift_detect_alibi
+        # from a2.tabular import pd_data_drift_detect_alibi
 
         input_size = X_train.shape[1]
         output_size = y_train.nunique()
@@ -168,7 +168,7 @@ def test_all():
 
     def test_np_utils():
         log("Testing np_utils ...")
-        # from utilmy.tabular import np_col_extractname, np_conv_to_one_col, np_list_remove
+        # from a2.tabular import np_col_extractname, np_conv_to_one_col, np_list_remove
         import numpy as np
         arr = np.array([[1, 2, 3], [4, 5, 6]])
         np_col_extractname(["aa_","bb-","cc"])
@@ -253,7 +253,7 @@ def pd_data_drift_detect_alibi(
 
     cd, is_drift_preds = pd_data_drift_detect(X_train, X_test,'regressoruncertaintydrift','tensorflow',model=model)
 
-    from utilmy import import_function
+    from a2 import import_function
     myclass = import_function(fun_name='KSDrift', module_name='alibi_detect.cd')  
     mdrift = myclass(df.values,p_val=p_val,**kwargs)
     
@@ -270,7 +270,7 @@ def pd_data_drift_detect_alibi(
         
     assert method in methods, f"method is invalid, methods available {methods}"
 
-    from utilmy import import_function
+    from a2 import import_function
     mc = import_function(fun_name= 'KSDrift', module_name='alibi_detect.cd')  
     mdrift = mc(df.values,p_val=p_val,**kwargs)
     
@@ -574,7 +574,7 @@ def test_hypothesis(df_obs: DataFrame, df_ref: DataFrame, method: str='', **kw):
 
     """
     try:
-       from utilmy.stats.hypothesis.contingency import (ChiSquareContingency, CochranQ, McNemarTest,
+       from a2.stats.hypothesis.contingency import (ChiSquareContingency, CochranQ, McNemarTest,
             table_margins, expected_frequencies )
     except :
        print(' pip install hypothesis ')
