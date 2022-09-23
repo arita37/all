@@ -18,7 +18,7 @@ polars
 
 ########################################################
 #### a2.date
-arrow
+# arrow
 tqdm
 holidays
 
@@ -31,11 +31,11 @@ pytest
 
 ########################################################
 #### a2.debug
-pyinstrument  ### code profile
-icecream  ### debugger
-rebound-cli  ## stackoverflow
-pysnooper   ### Debugger show lines of code step by ste
-snoop
+# pyinstrument  ### code profile
+# icecream  ### debugger
+# rebound-cli  ## stackoverflow
+# pysnooper   ### Debugger show lines of code step by ste
+# snoop
 
 
 ########################################################
@@ -134,7 +134,7 @@ protobuf==3.19.4
 #protobuf>=3.9.2,<3.20
 faiss-cpu
 #tensorflow-cpu==2.6.3
-tensorflow-cpu==2.7.3
+# tensorflow-cpu==2.7.3
 -f https://download.pytorch.org/whl/torch_stable.html 
 torch==1.10.0+cpu 
 # torch==1.7.1
@@ -149,12 +149,12 @@ pykeen
 ### visualize emb
 mpld3
 hdbscan
-umap-learn==0.5.3
+# umap-learn==0.5.3
 optuna
 
 
 ### ONNX part
-onnxruntime
+# onnxruntime
 # onnx
 
 
