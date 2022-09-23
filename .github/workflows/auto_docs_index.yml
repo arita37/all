@@ -99,7 +99,7 @@ jobs:
     - name: docs_generate
       continue-on-error: true
       run: |
-           docs all      --repo_dir a22/  --dirout docs/
+           docs all      --repo_dir a2/  --dirout docs/
            rm -rf docs/doc_prod.md
            rm -rf docs/output_repo.csv
            pip freeze > docs/piplist.txt
