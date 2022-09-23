@@ -3,7 +3,7 @@ python-box
 numpy
 pandas<=1.2.1
 scipy
-loguru
+#loguru
 cloudpickle
 
 ########################################################
@@ -160,7 +160,7 @@ optuna
 
 
 ##### Cloud
-boto
+# boto
 
 
 
