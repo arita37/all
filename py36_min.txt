@@ -5,7 +5,9 @@ pandas
 # imodels
 pyinstrument  ### code profile
 scipy
-loguru
+#loguru
+requests
+
 
 ########################################################
 #### a2.utils
