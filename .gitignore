@@ -180,3 +180,6 @@ temp
 /a2/stats/paper-5.pdf
 /a2/optim/logs
 /client_secrets.json
+*.png
+*.jpg
+*.jpeg
